@@ -10,7 +10,7 @@ else
     echo "You are root user"
  fi   
 
- yum install mysqlll -y
+ yum install mysql -y
 
  if [ $? -ne 0 ]
  then
@@ -18,4 +18,14 @@ else
    exit 1
  else
     echo "Installllig Mysql is sucess"
+    fi  
+
+    yum install git  -y
+
+    if [ $? -ne 0 ]
+ then
+   echo "Error: Installing git is fail"
+   exit 1
+ else
+    echo "Installllig git is sucess"
     fi  

@@ -3,6 +3,6 @@
 Number1=$1
 Number2=$2
 
-Sum=$({$Number1+$Number})
+Sum=$({$1+$2})
 
 echo "total :$Sum"

@@ -2,4 +2,4 @@
 
 Date=$(Date)
 
-echo "script excecuting date: $Date"
+echo "script excecuting date: ${Date}"

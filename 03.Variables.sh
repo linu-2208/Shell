@@ -1,5 +1,5 @@
 #!/bin/bash
 
-Date=$(Date)
+Date=$(date)
 
 echo "script excecuting date: ${Date}"

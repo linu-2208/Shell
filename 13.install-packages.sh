@@ -36,8 +36,9 @@ else
 #packages git mysql postfix
  for package in $@ 
  do 
+    
      yum list installed $package &>> LOGFILE #Check installed or not
-     if [ $? -ne 0] #if not installed
+     if [ $? -ne 0 ] #if not installed
      then 
          yum install $package -y &>> LOGFILE #install the package
          VALIDATE $? "Installation of $package "

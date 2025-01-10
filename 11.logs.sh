@@ -8,7 +8,7 @@ N="\e[0m"
 
 LOGFILE="/tmp/$0-$TIMESTAMP.log"
 
-echo "script name $0"
+echo "script started Executing at $TIMESTAMP" &>> $LOGFILE
 
 validate(){
      if [ $1 -ne 0 ]

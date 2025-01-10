@@ -3,9 +3,9 @@
 Number1=$1
 Number2=$2
 
-Sum=$($1+$2)
+sum=$(($1+$2))
 
-echo "total :$Sum"
+echo "total :$sum"
 
 echo "How many args paseed: $#"
 

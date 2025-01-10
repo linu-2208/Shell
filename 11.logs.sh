@@ -28,7 +28,7 @@ else
     echo "You are root user"
  fi   
 
- yum install mysql -y &>> $LOGFILE
+ yum install mysqll -y &>> $LOGFILE
 
  validate $? "installing mysql"
    

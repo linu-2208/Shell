@@ -35,8 +35,7 @@ else
 # package =git for first time
 #packages git mysql postfix
  for package in $@ 
-do 
-
+ do 
      yum list installed $package &>> LOGFILE #Check installed or not
      if [ $? -ne 0] #if not installed
      then 
@@ -45,6 +44,6 @@ do
      else
           echo -e   "$package is already installed.... $Y Skipping $N"
       fi     
-     done    
+ done    
  
 

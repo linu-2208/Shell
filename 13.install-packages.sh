@@ -37,7 +37,7 @@ else
  for package in $@ 
 do 
 
-     Yum list installed $package &>> LOGFILE #Check installed or not
+     yum list installed $package &>> LOGFILE #Check installed or not
      if [ $? -ne 0] #if not installed
      then 
          yum install $package -y &>> LOGFILE #install the package

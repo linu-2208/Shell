@@ -14,12 +14,11 @@ while getopts ":n:w:h" opt; do
     case $opt in
         n) NAME="$OPTARG";;
         w) WISHES="$OPTARG";;
-        \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;
+        \?) echo "invalid options: -"$OPTARG"" >&2; USAGE; exit;;
         :) USAGE; exit;;
         h) USAGE; exit;;
-
-     esac   
- done    
+    esac
+done   
 
 if [ -z "$NAME"] || [-z "$WISHES"] ; then
     echo "Error: Both -n and -w are mandatory options"

@@ -2,4 +2,4 @@
 
 PERSON=$1
 
-echo "Hello $PERSON we are learinng shell"
+echo "Hello $PERSON ,Good morning!we are learinng shell"

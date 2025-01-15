@@ -21,8 +21,10 @@ while getopts ":n:w:h" opt; do
     esac
 done   
 
-if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
-    echo "Error: Both -n and -w are mandatory options"
+#if [ -z "$NAME" ] || [ -z "$WISHES" ]; then
+if [ -z "$NAME" ]; then
+    #echo "Error: Both -n and -w are mandatory options"
+    echo  "Error: -n is mandatory "
     USAGE
     exit 1
 fi
